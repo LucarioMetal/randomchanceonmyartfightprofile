@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // List of URLs to randomly pick from
+    const links = [
+      "https://artfight.net/character/4879113.louie",
+      "https://artfight.net/character/4908624.rafael",
+      "https://artfight.net/character/6743855.killshot",
+      "https://artfight.net/character/6747494.bourbon",
+      "https://artfight.net/character/6747929.shogun",
+      "https://artfight.net/character/2823316.steve",
+      "https://artfight.net/character/3646033.lusio",
+      "https://artfight.net/character/2591846.zeph",
+      "https://artfight.net/character/2731575.caelum",
+      "https://artfight.net/character/3798234.nix",
+      "https://artfight.net/character/2581124.terry",
+      "https://artfight.net/character/2721015.agate",
+      "https://artfight.net/character/2747927.fang",
+      "https://artfight.net/character/3798187.leona"
+    ];
+
+    // Pick a random link
+    const randomIndex = Math.floor(Math.random() * links.length);
+    const destination = links[randomIndex];
+
+    // Redirect after short delay
+    setTimeout(() => {
+      window.location.href = destination;
+    }, 100); // You can change delay in milliseconds
+  </script>
+</head>
+<body>
+</body>
+</html>
